@@ -1,0 +1,135 @@
+/* Upload photo */
+.upload-photo-box {
+  margin-top: 32px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 160px;
+  height: 160px;
+  background-color: var(--color-bg-white);
+  border: 1px solid var(--color-text-grey);
+}
+
+.upload-photo-box .image-upload {
+  width: 95%;
+  height: 95%;
+}
+
+.upload-photo-box .profile-image {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.upload-photo-box .btn-edit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 8px;
+  width: 20px;
+  cursor: pointer;
+}
+
+.image-upload > input {
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+.input-box-container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+.input-box-container label {
+  width: 80%;
+  font-size: 13px;
+  margin-bottom: 6px;
+  color: var(--color-text-dark);
+}
+.input-box-container input {
+  width: 80%;
+  outline: none;
+  padding: 8px 10px;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  background: none;
+  border: 2px solid var(--color-text-light-grey);
+}
+
+.input-box-container input:hover,
+.input-box-container input:focus {
+  border-color: var(--color-text-grey);
+}
+
+/* checkbox : set as admin */
+.check-set-admin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+.checkbox {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 32px;
+}
+
+.checkbox__input {
+  display: none;
+}
+
+.checkbox__box {
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin-right: 8px;
+  border: 2px solid var(--color-primary);
+  transition: background-color 0.15s, border-color 0.15s;
+}
+.checkbox__box::after {
+  content: "\2714";
+  color: var(--color-bg-white);
+  transform: scale(0);
+  transition: transform 0.15s;
+  font-size: 12px;
+}
+.checkbox__input:checked + .checkbox__box {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+}
+.checkbox__input:checked + .checkbox__box::after {
+  transform: scale(1);
+}
+
+/* button for action */
+.btn-group {
+  width: 80%;
+  margin-top: 46px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 24px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+.btn-cancel {
+  background: none;
+  color: var(--color-primary);
+}
+.btn-submit {
+  background: var(--color-primary);
+  color: var(--color-bg-white);
+}

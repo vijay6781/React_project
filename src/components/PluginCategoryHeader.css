@@ -1,0 +1,18 @@
+.plugin-cat-header {
+  display: flex;
+  align-items: baseline;
+  margin-top: 24px;
+}
+.plugin-cat-header .title {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--color-primary);
+}
+.plugin-cat-header hr {
+  width: 100%;
+  height: 2px;
+  margin-left: 8px;
+  outline: none;
+  border: none;
+  background-color: var(--color-text-light-grey);
+}
